@@ -1,0 +1,50 @@
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .navbar {
+    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Saira", sans-serif;
+  }
+
+.logo-head img {
+width: 120px;
+}
+
+.menu-head {
+  font-size: 1.25rem;
+  align-self: center;
+}
+
+.menu-head a:link {
+  color: black;
+  text-decoration: none;
+}
+.menu-head a:visited {
+  color: black;
+}
+.menu-head a:hover {
+  font-weight: bolder;
+}
+
+.menu-item {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (max-width: 680px) {
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
