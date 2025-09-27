@@ -87,7 +87,7 @@ h3 {
   display: flex;
   gap: 85px;
   align-items: end;
-  overflow: auto;
+  overflow-x: scroll;
   white-space: nowrap;
   scrollbar-width: none;
   margin-top: 60px;
