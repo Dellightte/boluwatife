@@ -151,6 +151,9 @@ h3 {
 
 
 @media (max-width: 680px) {
+  h3 {
+    font-size: 1.5rem;
+  }
   .navbar {
     display: flex;
     flex-direction: column;
