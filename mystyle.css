@@ -149,11 +149,39 @@ h3 {
   font-weight: bold;
 }
 
+#skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.cover {
+  width: 87.5vw;
+  border-radius: 6.25%;
+  background-color: black;
+  text-align: left;
+  color: white;
+  padding: 40px;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: flex-start;
+  gap: 85px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.skill-carousel {
+  font-family: "Saira", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
 
 @media (max-width: 680px) {
   h3 {
     font-size: 1.5rem;
   }
+
   .navbar {
     display: flex;
     flex-direction: column;
@@ -177,5 +205,26 @@ h3 {
 
   .about img {
     border-radius: 6.25%;
+  }
+
+  .cover {
+    text-align: justify;
+  }
+
+  .cover h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-track {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .carousel-track p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: lighter;
   }
 }
