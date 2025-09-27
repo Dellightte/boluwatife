@@ -257,7 +257,8 @@ h3 {
   }
 
   .cover {
-    text-align: justify;
+    text-align: left;
+    padding: 10px;
   }
 
   .cover h1 {
@@ -278,9 +279,9 @@ h3 {
   }
 
   .service-text {
-    font-size: 2rem;
+    font-size: 1.9rem;
     padding: 10px;
-    text-align: justify;
+    text-align: left;
   }
 
   .list-grid {
@@ -292,7 +293,7 @@ h3 {
   }
 
   .list-items {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 10px;
   }
 
