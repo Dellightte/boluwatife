@@ -160,7 +160,11 @@ h3 {
   background-color: black;
   text-align: left;
   color: white;
-  padding: 40px;
+  padding: 50px;
+}
+
+.cover h1 {
+  font-size: 3rem;
 }
 
 .carousel-track {
@@ -175,6 +179,51 @@ h3 {
   font-family: "Saira", sans-serif;
   font-weight: normal;
   font-size: 1.5rem;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.cover-services {
+  width: 95vw;
+  border-radius: 6.25%;
+  text-align: left;
+  color: black;
+}
+
+.service-text {
+  font-family: "Martel", serif;
+  font-size: 3rem;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.list-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  list-style: none;
+  text-align: left;
+}
+
+.list-items {
+  font-family: "Saira", sans-serif;
+  font-weight: normal;
+  font-size: 1.75rem;
+  margin: 20px;
+}
+
+.list-items::before {
+  content: "0";
+  color: #e0e0e0;
+  margin-right: 30px;
+  font-family: "StephenType";
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 @media (max-width: 680px) {
@@ -225,6 +274,31 @@ h3 {
   .carousel-track p {
     margin: 0;
     font-size: 1rem;
-    font-weight: lighter;
+    font-weight: normal;
+  }
+
+  .service-text {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .list-grid {
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .list-items {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+
+  .list-items::before {
+    font-family: "StephenType";
+    font-size: 2.2rem;
+    margin-right: 10px;
   }
 }
