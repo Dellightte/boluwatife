@@ -42,7 +42,7 @@
 
 .hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 400px;
   grid-template-rows: auto;
 }
 
@@ -72,8 +72,14 @@ h3 {
   }
 }
 
+.rotating-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .site-icon {
   animation: spin 16s linear infinite;
+  width: 80%;
 }
 
 @media (max-width: 680px) {
